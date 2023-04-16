@@ -3,7 +3,7 @@
 int main()
 {
     float r,tots,ir,in,sin,liq;
-    int horas;
+    int horas,enc;
     printf("----Bem-Vindo-Trabalhador----\n");
     printf("[R$/h] = ");
     scanf("%f",&r);
@@ -22,7 +22,7 @@ int main()
     printf("= Salario Liquido = [%.2f]\n",liq);
     printf("-----------------------------\n");
     printf("\n\nDigite enter para encerrar...");
-    scanf("%i");
+    scanf("%i",enc);
 
     return 0;
 
