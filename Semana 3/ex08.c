@@ -12,7 +12,7 @@ int main()
    printf("---------------------------\n"); 
    printf("Salario/mes = [R$%.2f]\n",salario*horas);
    printf("---------------------------\n"); 
-   printf("\n\nDigite enter para encerrar...");
+   printf("\n\nDigite um numero e enter para encerrar...");
    scanf("%i",enc);
 
    return 0;
