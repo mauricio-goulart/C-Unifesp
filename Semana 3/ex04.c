@@ -15,7 +15,10 @@ int main()
     media = (n1+n2+n3+n4)/4;
     printf("----Media----\n");
     printf("Media = [%.2f]\n",media);
-    
+    printf("-------------\n");
+    printf("\n\nDigite enter para encerrar...");
+    scanf("%i");
+
 
 
     return 0;
