@@ -21,7 +21,7 @@ int main()
     printf("- SINDICATO (5%) = [%.2f]\n",sin);
     printf("= Salario Liquido = [%.2f]\n",liq);
     printf("-----------------------------\n");
-    printf("\n\nDigite enter para encerrar...");
+    printf("\n\nDigite um numero e enter para encerrar...");
     scanf("%i",enc);
 
     return 0;
