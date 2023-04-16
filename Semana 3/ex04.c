@@ -17,7 +17,7 @@ int main()
     printf("----Media----\n");
     printf("Media = [%.2f]\n",media);
     printf("-------------\n");
-    printf("\n\nDigite enter para encerrar...");
+    printf("\n\nDigite um numero e aperte enter para encerrar...");
     scanf("%i",enc);
 
 
