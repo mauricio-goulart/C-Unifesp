@@ -3,6 +3,7 @@
 int main()
 {
     float n1,n2,n3,n4,media;
+    int enc;
     printf("----Escola----\n");
     printf("1*Nota = ");
     scanf("%f",&n1);
@@ -17,7 +18,7 @@ int main()
     printf("Media = [%.2f]\n",media);
     printf("-------------\n");
     printf("\n\nDigite enter para encerrar...");
-    scanf("%i");
+    scanf("%i",enc);
 
 
 
