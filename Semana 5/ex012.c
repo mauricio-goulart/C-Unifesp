@@ -11,7 +11,7 @@ int main()
 
     for (size_t i = 0; i < 11; i++)
     {
-        printf("%i x %i = [%i]\n",n1,i,n1*i);
+        printf("%i x %2d = [%i]\n",n1,i,n1*i);
     }
      printf("---------------\n");
 
