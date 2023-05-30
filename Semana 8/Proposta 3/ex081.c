@@ -7,11 +7,11 @@
 
 int main()
 {
-    float v[3], menor;
+    float v[20], menor;
     int p = 0;
     
     printf("-----Contador-----\n");
-    for(int c = 0; c < 3; c++)
+    for(int c = 0; c < 20; c++)
     {
         printf("%i*Posicao\n",c + 1);
         printf("Valor: ");
