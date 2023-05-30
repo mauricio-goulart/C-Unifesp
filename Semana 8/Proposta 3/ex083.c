@@ -2,7 +2,7 @@
 
 int main()
 {
-    int v[20];
+    int v[19];
 
     printf("----Vetor----\n");
 
@@ -18,7 +18,7 @@ int main()
 
     for (int c = 19; c >= 0; c--)
     {
-        printf("%i",v[c]);
+        printf(" %i",v[c]);
     }
     
     
