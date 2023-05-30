@@ -6,7 +6,8 @@ int main()
 {
     int vetor1[TAMANHO_VETOR];
     int vetor2[TAMANHO_VETOR];
-    int vetorInterpolado[TAMANHO_VETOR * 2];
+    int vetor3[TAMANHO_VETOR];
+    int vetorInterpolado[TAMANHO_VETOR * 3];
 
     printf("Preencha o primeiro vetor com %d elementos:\n", TAMANHO_VETOR);
     for (int i = 0; i < TAMANHO_VETOR; i++)
@@ -22,15 +23,23 @@ int main()
         scanf("%d", &vetor2[i]);
     }
 
-    int j = 0; 
+    printf("\nPreencha o terceiro vetor com %d elementos:\n", TAMANHO_VETOR);
+    for (int i = 0; i < TAMANHO_VETOR; i++)
+    {
+        printf("Vetor3[%d]: ", i);
+        scanf("%d", &vetor3[i]);
+    }
+
+    int j = 0; // Variável auxiliar para controlar a posição do vetor interpolado
     for (int i = 0; i < TAMANHO_VETOR; i++)
     {
         vetorInterpolado[j++] = vetor1[i];
         vetorInterpolado[j++] = vetor2[i];
+        vetorInterpolado[j++] = vetor3[i];
     }
 
     printf("\nVetor interpolado:\n");
-    for (int i = 0; i < TAMANHO_VETOR * 2; i++)
+    for (int i = 0; i < TAMANHO_VETOR * 3; i++)
     {
         printf("%d ", vetorInterpolado[i]);
     }
