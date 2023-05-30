@@ -32,7 +32,7 @@ int main()
     }
     }
 
-    printf("Maior numero = [%f]\n",maior);
+    printf("Maior numero = [%.2f]\n",maior);
     printf("Posicao vetor = [%i]",p);
 
 
