@@ -2,7 +2,7 @@
 
 int main()
 {
-    float A[10],B[10];
+    float A[9],B[9];
     int x;
 
     printf("-----Vetores-----\n");
