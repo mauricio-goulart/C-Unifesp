@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-#define vet 3
+#define vet 20
+
 int main()
 {
     int maiorm = 0;
