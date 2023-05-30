@@ -7,7 +7,7 @@
 
 int main()
 {
-    float v[20], menor;
+    float v[19], menor;
     int p = 0;
     
     printf("-----Contador-----\n");
