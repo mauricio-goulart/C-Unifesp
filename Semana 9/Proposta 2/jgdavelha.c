@@ -1,5 +1,12 @@
 #include <stdio.h>
 
+#define RED "\033[1;31m"
+#define BLUE "\033[1;34m"
+#define RESET "\033[0m"
+
+
+
+
 int main()
 {
     int p1l,p1c,p2l,p2c, v = 0;
@@ -15,8 +22,8 @@ int main()
     {
         /*<-----PLAYER 1----->*/
         printf("------------------------------\n");
-        printf("Player 1\n");
-        printf("------------------------------\n");
+        printf(RED"Player 1\n");
+        printf(RESET"------------------------------\n");
 
         for ( int l = 0; l < 3; l++)
     {
@@ -79,8 +86,8 @@ int main()
             (jogo[0][0] == 'x' && jogo[1][1] == 'x' && jogo[2][2] == 'x') ||
             (jogo[0][2] == 'x' && jogo[1][1] == 'x' && jogo[2][0] == 'x'))
         {
-            
-            printf("Ganhouuu\n");
+            printf("------------------------------\n");
+            printf(RED"Jogador 1 Ganhou\n"RESET);
             cond = 's';
             break;
                 
@@ -93,6 +100,7 @@ int main()
 
         if (v == 9)
         {
+            printf("------------------------------\n");
             printf("EMPATE\n");
             cond = 's';
             break;
@@ -107,8 +115,8 @@ int main()
 
         /*<-----PLAYER 2----->*/
         printf("------------------------------\n");
-        printf("Player 2\n");
-        printf("------------------------------\n");
+        printf(BLUE"Player 2\n");
+        printf(RESET"------------------------------\n");
 
         for ( int l = 0; l < 3; l++)
     {
@@ -167,7 +175,8 @@ int main()
             (jogo[0][0] == 'o' && jogo[1][1] == 'o' && jogo[2][2] == 'o') ||
             (jogo[0][2] == 'o' && jogo[1][1] == 'o' && jogo[2][0] == 'o'))
         {
-            printf("Ganhouuu\n");
+            printf("------------------------------\n");
+            printf(BLUE"Jogador 2 Ganhou\n"RESET);
             cond = 's';
             break;
         }
