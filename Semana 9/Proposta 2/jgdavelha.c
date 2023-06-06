@@ -46,7 +46,7 @@ int main()
         scanf("%i",&p1c);
         printf("------------------------------\n");
 
-        if (jogo[p1l - 1][p1c - 1] == 'o')
+        while (jogo[p1l - 1][p1c - 1] == 'o')
         {
             printf("[Jogada Invalida!]\n");
             printf("Digite novamente\n");
@@ -140,7 +140,7 @@ int main()
         printf("------------------------------\n");
 
 
-        if (jogo[p2l - 1][p2c - 1] == 'x')
+        while (jogo[p2l - 1][p2c - 1] == 'x')
         {
             printf("[Jogada Invalida!]\n");
             printf("Digite novamente\n");
