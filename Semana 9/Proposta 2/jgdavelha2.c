@@ -11,7 +11,7 @@ int main()
 {
     int p1l,p1c,pcl,pcc, v = 0;
     char jogo[3][3] = {{'=','=','='},{'=','=','='},{'=','=','='}}, cond = 'n';
-    srand(time(NULL))
+    srand(time(NULL));
 
     printf("===============================\n");
     printf("\tJOGO DA VELHA\n");
@@ -47,7 +47,7 @@ int main()
         scanf("%i",&p1c);
         printf("------------------------------\n");
 
-        if (jogo[p1l - 1][p1c - 1] == 'o')
+        while (jogo[p1l - 1][p1c - 1] == 'o')
         {
             printf("[Jogada Invalida!]\n");
             printf("Digite novamente\n");
@@ -119,23 +119,17 @@ int main()
         printf(BLUE"COMPUTADOR\n");
         printf(RESET"------------------------------\n");
 
-        for ( int l = 0; l < 3; l++)
-    {
-        for (int c = 0; c < 3; c ++)
-        {
-            printf("\t%c",jogo[l][c]);
-        }
-
-        printf("\n");
-        
-    }
+     
 
         pcl = (rand() % 3) + 1;
         pcc = (rand() % 3) + 1;
 
-        if (jogo[pcl][pcc] = )
+        while (jogo[pcl][pcc] == 'x')
         {
-            /* code */
+            
+
+            pcl = (rand() % 3) + 1;
+            pcc = (rand() % 3) + 1;
         }
         
        
@@ -167,7 +161,7 @@ int main()
             (jogo[0][2] == 'o' && jogo[1][1] == 'o' && jogo[2][0] == 'o'))
         {
             printf("------------------------------\n");
-            printf(BLUE"Jogador 2 Ganhou\n"RESET);
+            printf(BLUE"PC GANHOU\n"RESET);
             cond = 's';
             break;
         }
