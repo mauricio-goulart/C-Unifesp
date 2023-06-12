@@ -2,20 +2,35 @@
 
 int main()
 {
-    char nome[30];
+    char p[30];
+    int cont = 0;
 
     printf("----STRING----\n");
-    printf("Digite o seu nome: ");
-    fgets(nome, 30, stdin);
+    printf("Digite algo: ");
+    fgets(p, 30, stdin);
 
-    printf("Ola %s",nome);
-
-    if (strlen(nome) > 0 && nome[strlen(nome)- 1] == '\n')
+    for (int c = 0; c < 30; c++)
     {
-        nome[strlen(nome) - 1] = '\0';
+
+        if (p[c] == '\n')
+        {
+            break;
+        }
+        
+
+        if (p[c] == 'a')
+        {
+            p[c] = 'b';
+            cont = cont + 1;
+        }
+        
     }
     
 
-    printf("%i",strlen(nome));
+    printf("--------------\n");
+    printf("Resultado = %s",p);
+    printf("\nVezes alterado = [%i]",cont);
+
+    
 
 }
