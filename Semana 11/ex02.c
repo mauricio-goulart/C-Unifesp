@@ -47,7 +47,7 @@ int main()
         c[k++] = b[j++];
     }
 
-    c[k] = '\0';  // Adiciona o caractere nulo de terminação da string
+    c[k] = '\0';
 
     printf("Vetor c = %s\n", c);
 
