@@ -1,36 +1,21 @@
 #include <stdio.h>
+#include <string.h>
 
-int main()
-{
-    char p[30];
-    int cont = 0;
+int main() {
+    char palavra[100];
+    int tamanho, i;
 
-    printf("----STRING----\n");
-    printf("Digite algo: ");
-    fgets(p, 30, stdin);
+    printf("Digite uma palavra: ");
+    scanf("%s", palavra);
 
-    for (int c = 0; c < 30; c++)
-    {
+    tamanho = strlen(palavra);
 
-        if (p[c] == '\n')
-        {
-            break;
-        }
-        
-
-        if (p[c] == 'a')
-        {
-            p[c] = 'b';
-            cont = cont + 1;
-        }
-        
+    printf("Palavra invertida: ");
+    for (i = tamanho - 1; i >= 0; i--) {
+        printf("%c", palavra[i]);
     }
     
+    printf("\n");
 
-    printf("--------------\n");
-    printf("Resultado = %s",p);
-    printf("\nVezes alterado = [%i]",cont);
-
-    
-
+    return 0;
 }
