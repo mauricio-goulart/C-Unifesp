@@ -54,8 +54,14 @@ int main()
     
         printf("%i", Fat(n1));
 
-        
-    } while (cond = 's');
+        printf("\n---------------------------");
+        printf("\nDeseja continuar? [S/n] ");
+        scanf(" %c", &cond);
+        printf("---------------------------\n");
+
+    } while (cond == 's');
+
+    
     
 
   
