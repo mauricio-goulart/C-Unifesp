@@ -1,3 +1,6 @@
+/*
+    Programa que faz bhaskara
+*/
 #include <stdio.h>
 
 int main()
