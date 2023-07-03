@@ -1,3 +1,6 @@
+/*
+Dada uma matriz mat de inteiros com 4 x 5 elementos,faça um algoritmo para somar os elementos de cada linha gerando o vetor somalinha. Em seguida, some os valores dos elementos do vetor em uma vari ́avel total, que deve ser impressa ao final.
+*/
 #include <stdio.h>
 
 int main()

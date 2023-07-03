@@ -1,3 +1,6 @@
+/*
+    Jogo da velha contra o computador.
+*/
 #include <stdio.h>
 
 #define RED "\033[1;31m"

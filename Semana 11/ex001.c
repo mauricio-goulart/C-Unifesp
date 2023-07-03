@@ -1,3 +1,6 @@
+/*
+    Faça um programa que inverta uma string.
+*/
 #include <stdio.h>
 #include <string.h>
 

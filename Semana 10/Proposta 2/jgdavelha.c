@@ -1,3 +1,6 @@
+/*
+    Jogo da velha com 2 players.
+*/
 #include <stdio.h>
 
 #define RED "\033[1;31m"
