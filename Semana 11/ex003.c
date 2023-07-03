@@ -1,3 +1,10 @@
+/*
+Fa ̧ca uma função que receba como entrada três strings (A, B e C) e retorne uma quarta string formada pela substituição de todas as ocorrências da string B pela string C dentro da string A
+    Ex.: Se A=’Abra a porta para entrar para poder
+    descansar calmamente’, B=’para’ e C=’e tente’, a
+    resposta deve ser: ’Abra a porta e tente entrar e tente
+    descansar calmamente’
+*/
 #include <stdio.h>
 #include <string.h>
 

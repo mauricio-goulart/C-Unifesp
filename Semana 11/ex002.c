@@ -1,3 +1,6 @@
+/*
+Faça um programa que receba 2 strings (A e B) e retorne uma terceira string (C) formada pelos caracteres de A e B intercalados. Ex.: Se A=’Quarta’ e B=’Segunda’, a resposta deve ser ’QSueagrutnada’.
+*/
 #include <stdio.h>
 #include <string.h>
 
