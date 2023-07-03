@@ -1,3 +1,6 @@
+/*
+    Altere o programa anterior, intercalando 3 vetores de 10 elementos cada.
+*/
 #include <stdio.h>
 
 #define TAMANHO_VETOR 10

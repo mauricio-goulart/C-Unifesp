@@ -1,3 +1,7 @@
+/*
+O mesmo exercício anterior, mas agora deve escrever o menor elemento do vetor e a respectiva
+posição dele nesse vetor.
+*/
 #include <stdio.h>
 
 #define COR_VERMELHO "\x1b[31m"
