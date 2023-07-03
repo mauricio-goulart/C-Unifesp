@@ -1,3 +1,6 @@
+/*
+    Faça um programa que mostre o maior número.
+*/
 #include <stdio.h>
 
 int main()
