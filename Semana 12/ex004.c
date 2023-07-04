@@ -1,6 +1,5 @@
 /*
-Escreva uma função que receba um número inteiro e retorne o inverso desse número. Por exemplo,
-se a função receber 123456 deve retornar 654321.
+
 */
 #include <stdio.h>
 
@@ -18,7 +17,6 @@ void Inverter()
     scanf("%s", n1);
 
     int l = strlen(n1);
-    char n2[30];
 
     if (n1[strlen(n1)-1] == '\n')
     {
