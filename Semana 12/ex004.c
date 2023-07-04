@@ -11,13 +11,14 @@ void Imprimir_menu()
     printf("-------------------------------------------\n");
 }
 
-char Inverter()
+void Inverter()
 {
     char n1[30];
     printf("Digite um numero: ");
     scanf("%s", n1);
 
     int l = strlen(n1);
+    char n2[30];
 
     if (n1[strlen(n1)-1] == '\n')
     {
