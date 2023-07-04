@@ -32,5 +32,4 @@ int main()
     Imprimir_menu();
 
     Inverter();
-
 }
