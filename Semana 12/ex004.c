@@ -2,6 +2,7 @@
 
 */
 #include <stdio.h>
+#include <string.h>
 
 void Imprimir_menu()
 {
@@ -17,12 +18,6 @@ void Inverter()
     scanf("%s", n1);
 
     int l = strlen(n1);
-
-    if (n1[strlen(n1)-1] == '\n')
-    {
-        n1[strlen(n1) - 1] = '\0';
-    }
-    
 
     for (int c = l; c >= 0; c--)
     {
