@@ -1,5 +1,6 @@
 /*
-
+Escreva uma função que receba um número inteiro e retorne o inverso desse número. Por exemplo,
+se a função receber 123456 deve retornar 654321.
 */
 #include <stdio.h>
 #include <string.h>
