@@ -29,6 +29,9 @@ int main()
     printf("Termo [R]: ");
     scanf("%i", &r);
 
+    c = Fatorial(n) / Fatorial(r) * (n - r);
+
     printf("%i",Fatorial(n));
 
+    return 0;
 }
