@@ -42,9 +42,23 @@ int Strcmp(char a[],char b[])
     
 }
 
+char *Strcpy(char e[],char d[])
+{
+    for (int c = 0; c < MAX; c++)
+    {
+        d[c] = e[c];
+        if (e[c] == '\0')
+        {
+            break;
+        }
+        
+    }
+    return d;
+}
+
 int main()
 {
-    char nome[MAX],a[MAX],b[MAX];
+    char nome[MAX],a[MAX],b[MAX],c[MAX],d[MAX];
 
     Imprimir_menu();
 
@@ -58,6 +72,9 @@ int main()
     printf("Digite outra coisa: ");
     scanf("%s", b);
     printf("%i", Strcmp(a,b));
-
+    printf("\n--------------------------");
+    printf("\nDigite algo: ");
+    scanf("%s", c);
+    printf("Copia = [%s]", Strcpy(c,d));
 
 }
