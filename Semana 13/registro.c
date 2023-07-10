@@ -52,9 +52,10 @@ void Inserir_aluno(struct AlunosLP TurmaLP[], int n)
 int Consultar_aluno(struct AlunosLP TurmaLP[], int a)
 {
     int ra;
-
-    printf("Digite o RA do aluno: ");
+    printf("------------------------------\n");
+    printf(GREEN"Caso ja exista digite o RA do aluno: "RESET);
     scanf("%i", &ra);
+    printf("------------------------------\n");
     getchar();
 
     for (int c = 0; c < a; c++)
@@ -72,11 +73,65 @@ void Mostrar_aluno(struct AlunosLP TurmaLP[], int c )
 {
     printf("Nome: [%s]\n", TurmaLP[c].nome);
     printf("Ra: [%d]\n",TurmaLP[c].ra);
-    printf("Frequencia: []\n",TurmaLP[c].freq);
+    printf("Frequencia: [%d]\n",TurmaLP[c].freq);
 
     for (int i = 0; i < 3; i++)
     {
-        printf("[%i] Nota = [%d]\n", c + 1, TurmaLP[c].nota[i]);
+        printf("[%i] Nota = [%d]\n", i + 1, TurmaLP[c].nota[i]);
+    }
+    printf("\n");
+}
+
+void Remover_aluno(struct AlunosLP TurmaLP[], int *a)
+{
+    if (*a == 0)
+    {
+        printf("Turma vazia.\n");
+        return;
+    }
+
+    int ra;
+    printf("Digite o RA do aluno a ser removido: ");
+    scanf("%d", &ra);
+    getchar();
+
+    int posicao = -1;
+    for (int i = 0; i < *a; i++)
+    {
+        if (TurmaLP[i].ra == ra)
+        {
+            posicao = i;
+            break;
+        }
+    }
+
+    if (posicao == -1)
+    {
+        printf("Aluno não encontrado.\n");
+        return;
+    }
+
+    for (int i = posicao; i < *a - 1; i++)
+    {
+        strcpy(TurmaLP[i].nome, TurmaLP[i + 1].nome);
+        TurmaLP[i].ra = TurmaLP[i + 1].ra;
+        TurmaLP[i].freq = TurmaLP[i + 1].freq;
+        for (int j = 0; j < 3; j++)
+        {
+            TurmaLP[i].nota[j] = TurmaLP[i + 1].nota[j];
+        }
+    }
+
+    (*a)--;
+    printf("Aluno removido com sucesso.\n");
+}
+
+
+void Mostrar_turma(struct AlunosLP TurmaLP[], int a)
+{
+    for (int c = 0; c < a; c++)
+    {
+        Mostrar_aluno(TurmaLP, c);
     }
     
 }
@@ -135,9 +190,15 @@ int main()
                 
 
             }
-            
-        
+            break;
+
+        case 3:
+            Remover_aluno(TurmaLP, &a);
+            break;
+        case 4:
+            Mostrar_turma(TurmaLP, a);
         }
+        
 
     } while (op != 5);
       
