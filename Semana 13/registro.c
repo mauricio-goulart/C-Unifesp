@@ -1,5 +1,8 @@
 #include <stdio.h>
 
+#define GREEN "\033[0;32m"
+#define RESET "\033[0m"
+
 struct AlunosLP
 {
     char nome[30];
@@ -11,7 +14,7 @@ struct AlunosLP
 void Imprimir_menu()
 {
     printf("------------------------------\n");
-    printf("\tSISTEMA UNIFESP\n");
+    printf(GREEN"\tSISTEMA UNIFESP\n"RESET);
     printf("------------------------------\n");
     printf("[1] Inserir Aluno\n");
     printf("[2] Consultar Aluno\n");
