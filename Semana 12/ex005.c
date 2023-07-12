@@ -1,67 +1,54 @@
 #include <stdio.h>
 
-
 void Imprimir_menu()
 {
     printf("--------------------------------------\n");
     printf("\tPRIMO\n");
     printf("--------------------------------------\n");
-
-
 }
 
-int Primo(int n1)
+int Primo(int n)
 {
-    if (n1 < 2)
+    if (n <= 1)
     {
         return 0;
     }
-    else if (n1 > 1)
+    if (n == 2)
     {
-        for ( int c = 2; c < n1; c++)
+        return  1;
+    }
+    
+        for (int i = 2; i < n; i++)
         {
-            if (n1 % c == 0)
+            if (n % i == 0)
             {
                 return 0;
             }
         }
-    }
-    else
-    {
-        return 1;
-    }
     
-    
-        
-        
-            
-            
-        
-        
-    return 0;
+    return 1;
 }
-
 
 int main()
 {
-    int n1,primo;
+    int n, primo;
 
     Imprimir_menu();
 
-    printf("Digite um numero: ");
-    scanf("%i", &n1);
+    printf("Digite um número: ");
+    scanf("%i", &n);
     
-    primo = Primo(n1);
+    primo = Primo(n);
 
     if (primo)
     {
         printf("--------------------------------------\n");
-        printf("Numero primo\n");
+        printf("É um número primo.\n");
     }
     else
     {
         printf("--------------------------------------\n");
-        printf("Nao e primo");
+        printf("Não é primo.\n");
     }
     
     return 0;
