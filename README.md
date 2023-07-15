@@ -20,3 +20,9 @@
 <p>Sinta-se à vontade para explorar o conteúdo disponível neste repositório. Utilize-o como um guia de estudo, pratique com os exercícios e aproveite os recursos para consolidar seus conhecimentos em lógica de programação em C.</p>
 
 <p>Se você tiver alguma dúvida, sugestão ou feedback, não hesite em entrar em contato. Aproveite o aprendizado!</p>
+
+<p><strong>Clique aqui para acessar o <a href="https://github.com/mauricio-goulart/C-Unifesp" rel="_blank">Repositório</a>.</strong></p>
+
+<h1></h1>
+
+<p align="center">MIT <a href="LICENSE" rel="_blank">LICENSE</a></p>
