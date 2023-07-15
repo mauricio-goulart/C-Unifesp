@@ -15,14 +15,8 @@
     <li><p><strong>Exercícios Práticos</strong>: Encontre uma seleção de exercícios práticos para aprimorar suas habilidades em lógica de programação em C. Os exercícios estão organizados por níveis de dificuldade e cobrem desde conceitos básicos até desafios mais avançados.</p>
 </ul>
 
-<h2>Clique aqui para acessar o Repositório</h2>
-
-<p>Para ter acesso ao conteúdo completo deste repositório  [clique aqui](https://link-do-seu-repositorio). </p>
 
 
-<h2>Considerações Finais</h2>
 <p>Sinta-se à vontade para explorar o conteúdo disponível neste repositório. Utilize-o como um guia de estudo, pratique com os exercícios e aproveite os recursos para consolidar seus conhecimentos em lógica de programação em C.</p>
-<p>Se você tiver alguma dúvida, sugestão ou feedback, não hesite em entrar em contato. Aproveite o aprendizado!</p>
 
-<p align="center">MIT <a href="LICENSE" target="_blank">LICENSE</a>
-</p>
+<p>Se você tiver alguma dúvida, sugestão ou feedback, não hesite em entrar em contato. Aproveite o aprendizado!</p>
